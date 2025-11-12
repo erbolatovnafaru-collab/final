@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us — Harmony Yoga Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="scrollProgress"></div>
+  <div id="notificationContainer"></div>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo">HARMONY</div>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About us</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn">🌙 Night</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-fullscreen">
+      <img class="hero-bg" src="images/foto17.jpg" alt="Yoga studio" loading="lazy">
+      <div class="hero-gradient"></div>
+      <div class="hero-center container">
+        <h1>
+          <span class="highlight">About Our Studio</span><br>
+          Where peace meets practice
+        </h1>
+      </div>
+    </section>
+
+    <section class="top-photos container">
+      <img class="ph" src="images/foto17.jpg" alt="Yoga studio interior" loading="lazy">
+      <img class="ph" src="images/foto18.jpg" alt="Yoga class session" loading="lazy">
+    </section>
+
+    <section class="studio container">
+      <h2>Our Yoga Studio</h2>
+      <p>For us, yoga is a path to balance and self-care — not just physical practice.</p>
+    </section>
+
+    <section class="facts-and-text container">
+      <div class="facts">
+        <div class="fact">
+          <div class="num">1,200</div>
+          <div class="cap">happy students</div>
+        </div>
+        <div class="fact">
+          <div class="num">92%</div>
+          <div class="cap">continue after the first month</div>
+        </div>
+        <img class="ph-wide" src="images/foto19.jpg" alt="Group yoga session" loading="lazy">
+      </div>
+
+      <div class="columns">
+        <article class="info">
+          <div class="dot"></div>
+          <div class="text">
+            <h3>Our Philosophy</h3>
+            <p>Yoga for us is more than just physical exercise. It's a way to connect body and mind, find inner peace, and create harmony in everyday life. We believe in making yoga accessible to everyone.</p>
+          </div>
+        </article>
+
+        <article class="info">
+          <div class="dot"></div>
+          <div class="text">
+            <h3>Our Space</h3>
+            <p>Our studio was designed as a place of comfort and inspiration. Warm light, natural materials, soft music, and a calm atmosphere help you leave the hustle behind and focus on yourself.</p>
+          </div>
+        </article>
+
+        <article class="info">
+          <div class="dot"></div>
+          <div class="text">
+            <h3>Our Teachers</h3>
+            <p>All of our instructors are certified specialists with international experience. They not only teach yoga techniques but also share a holistic approach to health and well-being.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="instructors container">
+      <h2>Meet Our Instructors</h2>
+      <p class="sub">A team of professionals with many years of teaching experience. Each instructor has international certifications and an individual approach to every student.</p>
+
+      <div class="search-box-container">
+        <input type="text" id="instructorSearch" placeholder="Search instructors by name, style, or specialization...">
+        <p id="instructorSearchMessage" class="search-message">Search our certified instructors</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="teacher">
+          <img src="images/inst1.jpg" alt="Elena" loading="lazy" class="lazy" data-src="images/inst1.jpg">
+          <h4>Elena</h4>
+          <p class="spec">Vinyasa • Hatha • RYT-500</p>
+          <p class="bio" style="display: none;">8 years experience. Specializes in dynamic Vinyasa flows and traditional Hatha yoga. Elena brings creativity and precision to every class.</p>
+        </article>
+
+        <article class="teacher">
+          <img src="images/inst2.jpg" alt="Kate" loading="lazy" class="lazy" data-src="images/inst2.jpg">
+          <h4>Kate</h4>
+          <p class="spec">Restorative • Nidra • Yoga Alliance</p>
+          <p class="bio" style="display: none;">6 years experience. Expert in restorative practices and yoga nidra. Kate creates deeply relaxing and therapeutic experiences.</p>
+        </article>
+
+        <article class="teacher">
+          <img src="images/inst3.jpg" alt="Maya" loading="lazy" class="lazy" data-src="images/inst3.jpg">
+          <h4>Maya</h4>
+          <p class="spec">Power • Mobility • CPT</p>
+          <p class="bio" style="display: none;">5 years experience. Combines strength training with traditional yoga. Maya's classes build power and improve mobility.</p>
+        </article>
+
+        <article class="teacher">
+          <img src="images/inst4.jpg" alt="Irina" loading="lazy" class="lazy" data-src="images/inst4.jpg">
+          <h4>Irina</h4>
+          <p class="spec">Yin • Mindfulness • RYT-200</p>
+          <p class="bio" style="display: none;">7 years experience. Specializes in Yin yoga and mindfulness meditation. Irina guides students to deep relaxation and awareness.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <h2>Studio Statistics</h2>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="counter" data-target="8">0</span>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <span class="counter" data-target="4">0</span>
+          <p>Certified Instructors</p>
+        </div>
+        <div class="stat">
+          <span class="counter" data-target="15">0</span>
+          <p>Yoga Styles</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>Harmony Yoga Studio<br>Phone: +7 (700) 000-00-00<br>Email: info@harmony.com</p>
+        <div class="socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Telegram</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Harmony Yoga Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

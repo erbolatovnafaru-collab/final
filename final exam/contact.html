@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Harmony Yoga Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="scrollProgress"></div>
+  <div id="notificationContainer"></div>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo">HARMONY</div>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn">🌙 Night</button>
+    </div>
+  </header>
+
+  <main>
+ <section class="contact container">
+  <h1>Contact Us</h1>
+  <p>Get in touch to start your yoga journey or ask any questions</p></br>
+  
+  <div class="success-message"></div>
+  
+  <form id="contactForm" class="adopt-form">
+    <div class="form-group">
+      <label for="name">Your Name *</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      <div class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email *</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      <div class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+      <div class="error-message"></div>
+    </div>
+
+    <!-- Добавляем поля пароля -->
+    <div class="form-group">
+      <label for="password">Create Password *</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <div class="password-strength">
+        <div class="strength-bar">
+          <div class="strength-fill"></div>
+        </div>
+        <span class="strength-text">Password strength</span>
+      </div>
+      <div class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password *</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+      <div class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="interest">I'm Interested In</label>
+      <select id="interest" name="interest">
+        <option value="">Select an option</option>
+        <option value="beginner">Beginner Classes</option>
+        <option value="schedule">Class Schedule</option>
+        <option value="pricing">Pricing Information</option>
+        <option value="private">Private Sessions</option>
+        <option value="corporate">Corporate Yoga</option>
+        <option value="other">Other Inquiry</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message *</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell us about your yoga experience, goals, or any questions..." required></textarea>
+      <div class="error-message"></div>
+    </div>
+
+    <button type="submit" class="btn primary">Create Account & Send Message</button>
+  </form>
+</section>
+<section class="faq container">
+  <h2>FAQ</h2>
+
+
+      <div class="accordion">
+        <button class="acc-btn">
+          <span>Do I need to bring my own yoga mat?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="acc-panel">
+          <p>We provide high-quality yoga mats and all necessary accessories at the studio. However, you're welcome to bring your own mat if you prefer.</p>
+        </div>
+
+        <button class="acc-btn">
+          <span>How long is each class?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="acc-panel">
+          <p>Most classes are 60 minutes. We also offer 75-minute sessions for advanced practices and 45-minute express classes for busy schedules.</p>
+        </div>
+
+        <button class="acc-btn">
+          <span>Is yoga suitable for beginners?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="acc-panel">
+          <p>Absolutely! We offer beginner-friendly classes with modified poses and individual attention. Our instructors will guide you through every step.</p>
+        </div>
+
+        <button class="acc-btn">
+          <span>What should I wear to class?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="acc-panel">
+          <p>Comfortable, stretchy clothing that allows movement. We recommend fitted tops and flexible pants or shorts. We practice barefoot.</p>
+        </div>
+
+        <button class="acc-btn">
+          <span>Can I freeze my membership?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="acc-panel">
+          <p>Yes, you can freeze your membership for up to 2 weeks per year for vacation or medical reasons. Please notify us in advance.</p>
+        </div>
+      </div>
+    </section>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>Harmony Yoga Studio<br>Phone: +7 (700) 000-00-00<br>Email: info@harmony.com</p>
+        <div class="socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Telegram</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Harmony Yoga Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Copy to clipboard functionality
+    document.getElementById('copyBtn').addEventListener('click', function() {
+      const textToCopy = document.getElementById('copyText').textContent;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        this.textContent = '✅ Copied!';
+        this.classList.add('copied');
+        setTimeout(() => {
+          this.textContent = 'Copy Contact Info';
+          this.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule — Harmony Yoga Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="scrollProgress"></div>
+  <div id="notificationContainer"></div>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo">HARMONY</div>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="schedule.html" class="active">Schedule</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn">🌙 Night</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro container">
+      <h1>Class Schedule</h1>
+      <p>Choose your convenient time to practice and find the perfect class for your level</p>
+    </section>
+
+    <section class="pairs container">
+      <div class="pair">
+        <img src="images/foto1.jpg" alt="Morning yoga" loading="lazy">
+        <div class="text">
+          <h3>Morning practices</h3>
+          <p>Start your day with gentle yoga, breathing, and energy for productivity.</p>
+        </div>
+      </div>
+      <div class="pair reverse">
+        <img src="images/foto4.jpg" alt="Evening yoga" loading="lazy">
+        <div class="text">
+          <h3>Evening practices</h3>
+          <p>Unwind after work, release stress, and restore your strength.</p>
+        </div>
+      </div>
+    
+    </section>
+
+    <section class="slots container">
+      <div class="slot">
+        <div class="ico">
+          <img src="images/morning.jpg" alt="Morning" loading="lazy" class="lazy" data-src="images/morning.jpg">
+        </div>
+        <div class="name">Morning Flow</div>
+        <div class="time">9:00–10:00</div>
+      </div>
+
+      <div class="slot">
+        <div class="ico">
+          <img src="images/evening.jpg" alt="Afternoon" loading="lazy" class="lazy" data-src="images/evening.jpg">
+        </div>
+        <div class="name">Afternoon Energy</div>
+        <div class="time">15:00–16:00</div>
+      </div>
+
+      <div class="slot">
+        <div class="ico">
+          <img src="images/afternoon.jpg" alt="Evening" loading="lazy" class="lazy" data-src="images/afternoon.jpg">
+        </div>
+        <div class="name">Evening Relax</div>
+        <div class="time">18:00–19:00</div>
+      </div>
+    </section>
+
+    <!-- Исправленная CRUD секция -->
+<section class="container">
+  <h2>Class Schedule Management</h2>
+  
+  <!-- Controls -->
+  <div class="crud-controls">
+    <input type="text" id="tableSearch" placeholder="Search classes...">
+    <select id="newDay">
+      <option value="">Select Day</option>
+      <option value="Mon">Monday</option>
+      <option value="Tue">Tuesday</option>
+      <option value="Wed">Wednesday</option>
+      <option value="Thu">Thursday</option>
+      <option value="Fri">Friday</option>
+      <option value="Sat">Saturday</option>
+      <option value="Sun">Sunday</option>
+    </select>
+    <input type="text" id="newClassName" placeholder="Class Name">
+    <input type="time" id="newTime">
+    <input type="text" id="newInstructor" placeholder="Instructor">
+    <button class="btn primary" onclick="addClass()">Add Class</button>
+  </div>
+
+  <!-- Table -->
+  <div class="table-wrap">
+    <table id="scheduleTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable('day')">Day 📊</th>
+          <th onclick="sortTable('className')">Class 📊</th>
+          <th onclick="sortTable('time')">Time 📊</th>
+          <th onclick="sortTable('instructor')">Instructor 📊</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic content will be inserted here by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+    <section class="intro container">
+      <a href="#" class="try-btn">Book Your First Class Free!</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>Harmony Yoga Studio<br>Phone: +7 (700) 000-00-00<br>Email: info@harmony.com</p>
+        <div class="socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Telegram</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Harmony Yoga Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

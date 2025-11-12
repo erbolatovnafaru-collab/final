@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Harmony Yoga Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="scrollProgress"></div>
+  <div id="notificationContainer"></div>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo">HARMONY</div>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn">🌙 Night</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="pricing container">
+    </br><h1>Pricing & Memberships</h1>
+      <p class="subtitle">
+        Choose the plan that suits your practice style - from single classes to unlimited monthly access.
+      </p>
+
+
+    <!-- В pricing.html после .subtitle добавим: -->
+<div class="gallery-filters">
+  <button class="gallery-filter-btn active" data-filter="all">All Plans</button>
+  <button class="gallery-filter-btn" data-filter="online">Online</button>
+  <button class="gallery-filter-btn" data-filter="single">Single Classes</button>
+  <button class="gallery-filter-btn" data-filter="package">Packages</button>
+  <button class="gallery-filter-btn" data-filter="monthly">Monthly</button>
+  <button class="gallery-filter-btn" data-filter="membership">Memberships</button>
+  <button class="gallery-filter-btn" data-filter="private">Private</button>
+  <button class="gallery-filter-btn" data-filter="student">Student</button>
+  <button class="gallery-filter-btn" data-filter="unlimited">Unlimited</button>
+</div>
+  
+
+      <div class="grid">
+        <div class="card">
+          <img src="images/foto5.jpg" alt="Online Class" loading="lazy" class="lazy" data-src="images/foto5.jpg">
+          <h3>Online Class</h3>
+          <p class="price">1,500 KZT</p>
+          <p class="features">Single online session • Any style • Recorded access</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+        
+        <div class="card">
+          <img src="images/foto10.jpg" alt="Single Visit" loading="lazy" class="lazy" data-src="images/foto10.jpg">
+          <h3>Single Visit</h3>
+          <p class="price">2,000 KZT</p>
+          <p class="features">One studio class • All styles • Mat included</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+        
+        <div class="card">
+          <img src="images/foto7.jpg" alt="Morning Pass" loading="lazy" class="lazy" data-src="images/foto7.jpg">
+          <h3>Morning Pass</h3>
+          <p class="price">7,500 KZT</p>
+          <p class="features">5 morning classes • Monthly validity • Energy boost</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+        
+        <div class="card">
+          <img src="images/foto8.jpg" alt="Monthly Pass" loading="lazy" class="lazy" data-src="images/foto8.jpg">
+          <h3>Monthly Pass</h3>
+          <p class="price">10,000 KZT</p>
+          <p class="features">8 classes monthly • All time slots • Best value</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+        
+        <div class="card">
+          <img src="images/foto9.jpg" alt="Friends Membership" loading="lazy" class="lazy" data-src="images/foto9.jpg">
+          <h3>Friends Membership</h3>
+          <p class="price">8,500 KZT </p>
+          <p class="features">Group discount • Bring a friend • Shared classes</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+        
+        <div class="card">
+          <img src="images/foto6.jpg" alt="Weekend Pass" loading="lazy" class="lazy" data-src="images/foto6.jpg">
+          <h3>Weekend Pass</h3>
+          <p class="price">6,000 KZT</p>
+          <p class="features">4 weekend classes • Relaxing sessions • Saturday & Sunday</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+        
+        <div class="card">
+          <img src="images/foto11.jpg" alt="Private Session" loading="lazy" class="lazy" data-src="images/foto11.jpg">
+          <h3>Private Session</h3>
+          <p class="price">15,000 KZT</p>
+          <p class="features">One-on-one • Personalized routine • Flexible scheduling</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+        
+        <div class="card">
+          <img src="images/foto12.jpg" alt="Student Pass" loading="lazy" class="lazy" data-src="images/foto12.jpg">
+          <h3>Student Pass</h3>
+          <p class="price">7,000 KZT</p>
+          <p class="features">Student discount • Valid ID required • All classes</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+        
+        <div class="card">
+          <img src="images/foto13.jpg" alt="Unlimited Month" loading="lazy" class="lazy" data-src="images/foto13.jpg">
+          <h3>Unlimited Month</h3>
+          <p class="price">18,000 KZT</p>
+          <p class="features">Unlimited classes • All styles • Online & studio</p>
+          <a href="#" class="btn primary">Choose</a>
+        </div>
+      </div>
+
+    
+      <p class="note">
+        Payment by card or cash. Discount available for students and for 3 months pre-payment.
+        All plans include complimentary yoga mat usage.
+      </p></br>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>Harmony Yoga Studio<br>Phone: +7 (700) 000-00-00<br>Email: info@harmony.com</p>
+        <div class="socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Telegram</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Harmony Yoga Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
